@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: video-downloader-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python video_download_bot_main.py"
